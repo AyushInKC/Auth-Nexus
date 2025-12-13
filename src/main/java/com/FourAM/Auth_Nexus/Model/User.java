@@ -26,13 +26,13 @@ public class User {
     private String email;
 
     @Column(name = "username", nullable = false, unique = true, length = 500)
-    private String username;
+    private String name;
 
     private String password;
     private String image;
 
     @Column(nullable = false)
-    private boolean enabled = true;
+    private boolean enable = true;
 
     @Column(name = "created_at", updatable = false)
     private Instant createdAt;
