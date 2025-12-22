@@ -31,7 +31,7 @@ public class User {
     private String password;
     private String image;
 
-    @Column(nullable = false)
+    @Column(name = "enabled", nullable = false)
     private boolean enable = true;
 
     @Column(name = "created_at", updatable = false)
